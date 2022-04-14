@@ -82,9 +82,7 @@ class Calculator {
     }
     
     func subtract(lhs: [String: Int], rhs: [String: Int]) -> [String: Int] {
-        let xkey = Array(lhs)[0].key
-        let ykey = Array(lhs)[1].key
-        return ["x": lhs[xkey]! - rhs[xkey]!, "y": lhs[ykey]! - rhs[ykey]!]
+        return ["x": lhs["x"]! - rhs["x"]!, "y": lhs["y"]! - rhs["y"]!]
     }
 }
 
